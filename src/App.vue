@@ -14,6 +14,9 @@
     export default {
         components: {
             appHeader: Header
+        },
+        created() {
+            this.$store.dispatch('initStocks');
         }
     }
 </script>
@@ -23,3 +26,5 @@
         padding: 30px;
     }
 </style>
+
+2

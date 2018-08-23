@@ -12,7 +12,7 @@
                 </ul>
                 <strong class="navbar-text navbar-right">Funds: </strong>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" @click="endDay">End Day</a></li>
+                    <li><a href="#" >End Day</a></li>
                     <li
                             class="dropdown"
                             >

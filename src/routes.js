@@ -9,5 +9,4 @@ import Stocks from "./components/stocks/Stocks.vue";
     {path: "/portfolio", component: Portfolio},
     {path: "/stocks", component: Stocks}
 
-
  ]
