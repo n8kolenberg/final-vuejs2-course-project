@@ -3,9 +3,13 @@
  import stocks from './modules/stocks'
  import portfolio from './modules/porfolio'
 
+ //Importing the actions for loading data to the stocks and portfolio modules from the database that we separated into actions.js
+ import * as actions from './actions'
+
  Vue.use(Vuex);
 
  export default new Vuex.Store({
+    actions,
     modules: {
         stocks,
         portfolio
