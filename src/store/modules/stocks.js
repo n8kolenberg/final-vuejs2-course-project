@@ -1,4 +1,4 @@
-import stocks from '../../../data/stocks'
+import stocks from '../../data/stocks'
 
 const state = {
     stocks: []
@@ -10,13 +10,15 @@ const mutations = {
 
     },
     'RND_STOCKS'(state) {
-
+        state.stocks.forEach(stock => {
+            stock.price = Math.round(stock.price * (1 + Math.random() - 0.5));
+        });
     } 
 };
 
 const actions = {
     buyStock({commit}, order) {
-        commit();
+        commit('BUY_STOCK', order); //'BUY_STOCK' is located in the portfolio.js module 
     },
     initStocks({commit}) {
         commit('SET_STOCKS', stocks);

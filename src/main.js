@@ -6,6 +6,11 @@ import store from './store/store.js'
 
 Vue.use(VueRouter);
 
+Vue.filter('currency', (value) => {
+  return '$' + value.toLocaleString();
+})
+
+
 const router = new VueRouter({
   mode: 'history', //To not have the hashes in the urls
   routes //ES6 syntax for routes: routes
